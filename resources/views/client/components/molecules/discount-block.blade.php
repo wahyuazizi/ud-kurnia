@@ -9,8 +9,8 @@
                 <x-molecules.button text="Beli Sekarang" type="light" align="start" size="sm"/>
             </div>
         </div>
-        <div class="bg-white rounded-3">
-            <img src="{{ asset('client/img/'.$image) }}" alt="" class="img-fluid">
+        <div class="bg-white rounded-3" style="width: 180px; height: 180px; object-fit: cover;">
+            <img src="{{ asset('storage/'.$image) }}" alt="{{$item}}" class="img-fluid">
         </div>
     </div>
 </div>

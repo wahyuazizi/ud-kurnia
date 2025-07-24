@@ -2,7 +2,7 @@
   <x-organisms.navbar :path="$shop->path"/>
   <x-organisms.hero :dataProduct="$product"/>
   <x-organisms.choosen-us />
-  <x-organisms.discounts />
+  <x-organisms.discounts :shop="$shop"/>
   <x-organisms.products :dataProduct="$product">
     <h1 class="text-center pb-5">Produk Terlaris Kami</h1>
     <x-slot:productCTA>

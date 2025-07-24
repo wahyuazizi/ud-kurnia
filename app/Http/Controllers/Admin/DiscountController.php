@@ -30,10 +30,10 @@ class DiscountController extends Controller
         $request->validate([
             'discount_text' => 'nullable|string|max:255',
             'discount_item' => 'nullable|string|max:255',
-            'discount_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|dimensions:width=180,height=180',
+            'discount_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
             'discount2_text' => 'nullable|string|max:255',
             'discount2_item' => 'nullable|string|max:255',
-            'discount2_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|dimensions:width=180,height=180',
+            'discount2_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         $shop = Auth::user()->shop;
