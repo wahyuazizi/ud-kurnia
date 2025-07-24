@@ -12,8 +12,7 @@
                   </div>
                   <div class="col-md-8">
                       <h6 class="text-muted font-semibold">Sales</h6>
-                      <h6 class="font-extrabold mb-0">$
-                        {{ $sales }}
+                      <h6 class="font-extrabold mb-0">Rp {{ number_format($sales, 0, ',', '.') }}
                       </h6>
                   </div>
               </div>
@@ -94,7 +93,7 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $row->order_code }}</td>
                     <td>{{ $row->name }}</td>
-                    <td>${{ $row->total }}</td>
+                    <td>Rp {{ number_format($row->total, 0, ',', '.') }}</td>
                     <td>
                       @if($row->status == 0)
                         <span class="badge bg-warning">Unprocessed</span>

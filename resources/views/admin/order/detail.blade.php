@@ -80,7 +80,7 @@
                     <td>{!! str_replace('-', ' ', ucwords($item->title)) !!}</td>
                     <td>${{ $item->price }}</td>
                     <td>{{ $item->quantity }}</td>
-                    <td>${!! $item->price * $item->quantity !!}</td>
+                    <td>Rp {!! number_format($item->price * $item->quantity, 0, ',', '.') !!}</td>
                   </tr>
                 @endforeach
               </tbody>

@@ -1,17 +1,17 @@
 <ul class="nav-list">
   <li class="nav-item">
-    <a href="/" class="nav-link">Home</a>
+    <a href="/" class="nav-link">Beranda</a>
   </li>
   <li class="nav-item">
-    <a href="{{ route('clientProducts') }}" class="nav-link">Products</a>
+    <a href="{{ route('clientProducts') }}" class="nav-link">Produk</a>
   </li>
   <li class="nav-item">
-    <a href="{{ route('clientCategory') }}" class="nav-link">Category</a>
+    <a href="{{ route('clientCategory') }}" class="nav-link">Kategori</a>
   </li>
   <li class="nav-item">
-    <a href="{{ route('clientAbout') }}" class="nav-link">About</a>
+    <a href="{{ route('clientAbout') }}" class="nav-link">Tentang Kami</a>
   </li>
   <li class="nav-item">
-    <a href="{{ route('clientCheckOrder') }}" class="nav-link">Check Order</a>
+    <a href="{{ route('clientCheckOrder') }}" class="nav-link">Cek Pesanan</a>
   </li>
 </ul>

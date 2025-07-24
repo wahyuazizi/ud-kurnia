@@ -57,5 +57,5 @@
   </div>
 
   <footer>
-    <p>	&#169; {{ now()->year }} {{ $shop->name_shop }}. All rights reserved.</p>
+    <p>&#169; 2025 UD Kurnia, Made with <i class="bi bi-heart-fill"></i> by Ikhwan</p>
   </footer>

@@ -35,7 +35,7 @@
 
 <div class="card mt-3 mb-4">
     <div class="card-body">
-        <h5 class="font-secondary"><strong>Total : $<span class="cart-total">{{ $total}}</span></strong></h5>
+        <h5 class="font-secondary"><strong>Total : Rp <span class="cart-total">{{ number_format($total, 0, ',', '.') }}</span></strong></h5>
         @if(!request()->routeIs('clientCheckout'))
             <div class="d-flex justify-content-between mt-3 font-secondary">
                 <a href="{{ url('/') }}" class="btn btn-sm btn-outline-secondary">

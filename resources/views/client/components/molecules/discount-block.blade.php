@@ -6,7 +6,7 @@
                 <h2 class="text-white m-0">{{ $item }}</h2>
             </div>
             <div>
-                <x-molecules.button text="Buy Now" type="light" align="start" size="sm"/>
+                <x-molecules.button text="Beli Sekarang" type="light" align="start" size="sm"/>
             </div>
         </div>
         <div class="bg-white rounded-3">

@@ -38,7 +38,7 @@
                         <tr>
                             <td><b>Total</b></td>
                             <td>&nbsp; : &nbsp;</td>
-                            <td><b><u>${{ $order->total }}</u></b></td>
+                            <td><b><u>Rp {{ number_format($order->total, 0, ',', '.') }}</u></b></td>
                         </tr>
                         <tr>
                             <td><b>Name</b></td>

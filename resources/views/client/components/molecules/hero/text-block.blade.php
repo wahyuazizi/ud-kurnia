@@ -3,6 +3,6 @@
 @endpush
 
 <div class="text-center text-block-hero py-5">
-    <h1>Sustainable yet stylish lifestye</h1>
-    <p>Autem eveniet eum delectus pariatur. Et maiores sit sed placeat quas voluptatum qui. Suscipit veritatis est provident illum commodi. Voluptas quos culpa. Nobis ex nihil laudantium.</p>
+    <h1>UD Kurnia: Solusi Grosir Terbaik untuk Kebutuhan Bisnis Anda</h1>
+    <p>Kami menyediakan berbagai macam produk grosir berkualitas tinggi dengan harga bersaing. Temukan semua kebutuhan bisnis Anda di sini, mulai dari kebutuhan sehari-hari hingga produk khusus.</p>
 </div>

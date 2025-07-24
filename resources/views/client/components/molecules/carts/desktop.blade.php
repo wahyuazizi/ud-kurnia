@@ -20,7 +20,7 @@
                     {!! str_replace('-', ' ', ucwords($details['title'])) !!} 
                 </td>
                 <td>
-                    ${{$details['price']}}
+                    Rp {{ number_format($details['price'], 0, ',', '.') }}
                 </td>
                 <td>
                     @if(request()->routeIs('clientCheckout'))
