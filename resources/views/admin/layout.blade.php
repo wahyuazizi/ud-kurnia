@@ -76,6 +76,13 @@
                             </a>
                         </li>
 
+                        <li class="sidebar-item {{ request()->routeIs('discountEdit') ? 'active' : '' }}">
+                            <a href="{{route('discountEdit')}}" class='sidebar-link'>
+                                <i class="bi bi-tag-fill"></i>
+                                <span>Discount</span>
+                            </a>
+                        </li>
+
                         <li class="sidebar-item has-sub mt-5">
                             <a href="" class='sidebar-link'>
                                 <i class="bi bi-person-circle"></i>

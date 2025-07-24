@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ShopController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\DiscountController;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Client\CartController;
 use App\Http\Controllers\PaymentController;
@@ -93,5 +94,11 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/admin/order/{order_code}', 'detail')->name('orderDetail');
         Route::post('/admin/order/update-status/{order_code}', 'updateStatus')->name('orderUpdateStatus');
         Route::get('/admin/order/delete/{order_code}', 'delete')->name('orderDelete');
+    });
+
+    // Discount
+    Route::controller(DiscountController::class)->group(function() {
+        Route::get('/admin/discount', 'edit')->name('discountEdit');
+        Route::post('/admin/discount/update', 'update')->name('discountUpdate');
     });
 });
