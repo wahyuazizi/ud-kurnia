@@ -31,7 +31,7 @@
                 </span>
             @enderror
         </div>
-        <button type="submit" class="btn btn-primary float-end">Order</button>
+        <button type="button" id="pay-button" class="btn btn-primary float-end">Pay Now</button>
     </form>
 </div>
 @push('js')

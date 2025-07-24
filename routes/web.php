@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Client\CartController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::controller(ClientController::class)->group(function(){
     Route::post('/check-order-status', 'checkOrderStatus')->name('clientCheckOrderStatus');
     Route::get('/about', 'about')->name('clientAbout');
 });
+
+Route::post('/payment/pay', [PaymentController::class, 'pay']);
 
 Route::controller(CartController::class)->group(function(){
     Route::get('/carts', 'carts')->name('clientCarts');
