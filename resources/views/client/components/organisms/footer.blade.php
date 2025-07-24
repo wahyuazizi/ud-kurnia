@@ -56,6 +56,6 @@
     </div>
   </div>
 
-  <footer>
-    <p>&#169; 2025 UD Kurnia, Made with <i class="bi bi-heart-fill"></i> by Ikhwan</p>
+  <footer class="container text-center py-3">
+    <p class="m-0 d-inline-block text-nowrap">&#169; 2025 UD Kurnia, Made with ❤️ by Ikhwan</p>
   </footer>
