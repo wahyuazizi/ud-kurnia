@@ -17,7 +17,7 @@ class ClientController extends Controller
     public function index(){
 
         if(!Shop::exists()){
-            return redirect()->route('register');
+            return redirect()->route('login');
         }
 
         $data = [

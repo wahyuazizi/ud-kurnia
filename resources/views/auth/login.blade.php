@@ -18,7 +18,7 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo d-flex justify-content-center">
-                        <a href="/"><h1><u>ECM</u></h1></a>
+                        <a href="/"><h1><u>UD KURNIA</u></h1></a>
                     </div>
                     <h2 class="text-center">Log in.</h2>
                     <form method="POST" action="{{ route('login') }}">
@@ -51,9 +51,7 @@
 
                         <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-3">Log in</button>
                     </form>
-                    <div class="text-center mt-5 text-lg">
-                        <p class='text-gray-600'>Don't have an account? <a href="/register" class="font-bold">Register</a>.</p>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-lg-7 d-none d-lg-block">

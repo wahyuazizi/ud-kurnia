@@ -29,12 +29,12 @@
               <div class="col-3">
                 <img src="{{ asset('client/img/icon-instagram.png') }}" alt="" class="img-fluid">
               </div>
-              <div class="col-3">
+              <!-- <div class="col-3">
                 <img src="{{ asset('client/img/icon-tokopedia.png') }}" alt="" class="img-fluid">
               </div>
               <div class="col-3">
                 <img src="{{ asset('client/img/icon-facebook.png') }}" alt="" class="img-fluid">
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -44,12 +44,12 @@
             <div class="col-3">
               <img src="{{ asset('client/img/icon-instagram.png') }}" alt="" class="img-fluid">
             </div>
-            <div class="col-3">
+            <!-- <div class="col-3">
               <img src="{{ asset('client/img/icon-tokopedia.png') }}" alt="" class="img-fluid">
             </div>
             <div class="col-3">
               <img src="{{ asset('client/img/icon-facebook.png') }}" alt="" class="img-fluid">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

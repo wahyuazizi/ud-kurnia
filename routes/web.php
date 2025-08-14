@@ -52,7 +52,7 @@ Route::controller(CartController::class)->group(function(){
     Route::post('/delete-cart', 'deleteCart')->name('clientDeleteCart');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware(['auth'])->group(function () {
