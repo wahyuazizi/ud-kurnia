@@ -11,7 +11,7 @@
                       </div>
                   </div>
                   <div class="col-md-8">
-                      <h6 class="text-muted font-semibold">Sales</h6>
+                      <h6 class="text-muted font-semibold">Penjualan</h6>
                       <h6 class="font-extrabold mb-0">Rp {{ number_format($sales, 0, ',', '.') }}
                       </h6>
                   </div>
@@ -29,7 +29,7 @@
                       </div>
                   </div>
                   <div class="col-md-8">
-                      <h6 class="text-muted font-semibold">Completed</h6>
+                      <h6 class="text-muted font-semibold">Selesai</h6>
                       <h6 class="font-extrabold mb-0">{{ $order }}</h6>
                   </div>
               </div>
@@ -46,7 +46,7 @@
                       </div>
                   </div>
                   <div class="col-md-8">
-                      <h6 class="text-muted font-semibold">Products</h6>
+                      <h6 class="text-muted font-semibold">Produk</h6>
                       <h6 class="font-extrabold mb-0">{{ $product }}</h6>
                   </div>
               </div>
@@ -64,7 +64,7 @@
                       </div>
                   </div>
                   <div class="col-md-8">
-                      <h6 class="text-muted font-semibold">Category</h6>
+                      <h6 class="text-muted font-semibold">Kategori</h6>
                       <h6 class="font-extrabold mb-0">{{ $category }}</h6>
                   </div>
               </div>
@@ -80,11 +80,11 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Order Code</th>
-                    <th>Name</th>
+                    <th>Kode Order</th>
+                    <th>Nama</th>
                     <th>Total</th>
                     <th>Status</th>
-                    <th width="20%">Action</th>
+                    <th width="20%">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -96,17 +96,17 @@
                     <td>Rp {{ number_format($row->total, 0, ',', '.') }}</td>
                     <td>
                       @if($row->status == 0)
-                        <span class="badge bg-warning">Unprocessed</span>
+                        <span class="badge bg-warning">Belum Diproses</span>
                       @elseif($row->status == 1)
-                        <span class="badge bg-info">Confirmed</span>
+                        <span class="badge bg-info">Dikonfirmasi</span>
                       @elseif($row->status == 2)
-                        <span class="badge bg-primary">Processed</span>
+                        <span class="badge bg-primary">Diproses</span>
                       @elseif($row->status == 3)
                         <span class="badge bg-danger">Pending</span>
                       @elseif($row->status == 4)
-                        <span class="badge bg-secondary">Shipping</span>
+                        <span class="badge bg-secondary">Pengiriman</span>
                       @elseif($row->status == 5)
-                        <span class="badge bg-success">Completed</span>
+                        <span class="badge bg-success">Selesai</span>
                       @endif
                     </td>
                     <td>
