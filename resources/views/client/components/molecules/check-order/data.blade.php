@@ -16,17 +16,17 @@
                             <td>&nbsp; : &nbsp;</td>
                             <td>
                                 @if($order->status == 0)
-                                    <span class="badge bg-warning" >Unprocessed</span>
+                                    <span class="badge bg-warning" >Belum Diproses</span>
                                 @elseif($order->status == 1)
-                                    <span class="badge bg-info">Confirmed</span>
+                                    <span class="badge bg-info">Dikonfirmasi</span>
                                 @elseif($order->status == 2)
-                                    <span class="badge bg-primary">Processed</span>
+                                    <span class="badge bg-primary">Diproses</span>
                                 @elseif($order->status == 3)
-                                    <span class="badge bg-danger">Pending</span>
+                                    <span class="badge bg-danger">Ditunda</span>
                                 @elseif($order->status == 4)
-                                    <span class="badge bg-secondary">Shipping</span>
+                                    <span class="badge bg-secondary">Sedang Dikirim</span>
                                 @elseif($order->status == 5)
-                                    <span class="badge bg-success">Completed</span>
+                                    <span class="badge bg-success">Selesai</span>
                                 @endif
                             </td>
                         </tr>
@@ -41,22 +41,22 @@
                             <td><b><u>Rp {{ number_format($order->total, 0, ',', '.') }}</u></b></td>
                         </tr>
                         <tr>
-                            <td><b>Name</b></td>
+                            <td><b>Nama</b></td>
                             <td>&nbsp; : &nbsp;</td>
                             <td>{{ $order->name }}</td>
                         </tr>
                         <tr>
-                            <td><b>Phone</b></td>
+                            <td><b>Telepon</b></td>
                             <td>&nbsp; : &nbsp;</td>
                             <td>{{ $order->phone }}</td>
                         </tr>
                         <tr>
-                            <td><b>Address</b></td>
+                            <td><b>Alamat</b></td>
                             <td>&nbsp; : &nbsp;</td>
                             <td>{{ $order->address }}</td>
                         </tr>
                         <tr>
-                            <td><b>Note</b></td>
+                            <td><b>Catatan</b></td>
                             <td>&nbsp; : &nbsp;</td>
                             <td>{{ $order->note }}</td>
                         </tr>
@@ -69,9 +69,9 @@
                         <thead>
                             <tr>
                                 <td>No</td>
-                                <td>Title</td>
-                                <td>Price</td>
-                                <td>Quantity</td>
+                                <td>Judul</td>
+                                <td>Harga</td>
+                                <td>Kuantitas</td>
                                 <td>Sub Total</td>
                             </tr>
                         </thead>
@@ -80,9 +80,9 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{!! str_replace('-', ' ', ucwords($item->title)) !!}</td>
-                                <td>${{ $item->price }}</td>
+                                <td>Rp. {{ $item->price }}</td>
                                 <td>{{ $item->quantity }}</td>
-                                <td>${!! $item->price * $item->quantity !!}</td>
+                                <td>Rp. {!! $item->price * $item->quantity !!}</td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -124,9 +124,59 @@
             <a href="{{ url('/') }}" class="btn btn-sm btn-outline-secondary font-secondary"><span class="d-flex align-items-center gap-2"><i class="bi bi-arrow-left"></i> Home </span></a>
           </div>
           <div class="col-8">
-            <a href="/" class="btn btn-sm float-end btn-primary font-secondary"><span class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> &nbsp;Confirm Order</span></a>
+            <button type="button" id="pay-button" class="btn btn-sm float-end btn-primary font-secondary">Konfirmasi Pembayaran</button>
           </div>
         </div>
       </div>
     </div>
 </div>
+
+@push('js')
+<script type="text/javascript"
+    src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="{{ config('midtrans.client_key') }}"></script>
+<script type="text/javascript">
+    document.getElementById('pay-button').onclick = function(){
+        fetch('/payment/pay', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            },
+            body: JSON.stringify({
+                order_code: "{{ $order }}"
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.snap_token) {
+                snap.pay(data.snap_token, {
+                    onSuccess: function(result){
+                        /* You may add your own implementation here */
+                        alert("payment success!"); console.log(result);
+                        window.location.href = "{{ route('clientCheckOrder') }}"; // Redirect to check order page
+                    },
+                    onPending: function(result){
+                        /* You may add your own implementation here */
+                        alert("waiting for your payment!"); console.log(result);
+                    },
+                    onError: function(result){
+                        /* You may add your own implementation here */
+                        alert("payment failed!"); console.log(result);
+                    },
+                    onClose: function(){
+                        /* You may add your own implementation here */
+                        alert('you closed the popup without finishing the payment');
+                    }
+                });
+            } else if (data.error) {
+                alert('Error: ' + data.error);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while processing your request.');
+        });
+    };
+</script>
+@endpush
