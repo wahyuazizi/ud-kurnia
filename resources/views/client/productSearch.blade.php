@@ -1,7 +1,7 @@
 <x-template.layout title="{{$title}}">
   <x-organisms.navbar cartCount=10 :path="$shop->path"/>
   <x-organisms.products :dataProduct="$product">
-    <h3 class="pb-3">Result Product : <u>{{ $search }}</u></h3>
+    <h3 class="pb-3">Hasil Produk : <u>{{ $search }}</u></h3>
     <x-slot:productCTA>
       <div class="pt-5">
         {{ $product->links('vendor.pagination.bootstrap-5') }}

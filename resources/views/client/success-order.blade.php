@@ -8,8 +8,8 @@
         <p>Anda selalu dapat melacak pesanan Anda di halaman <a href="{{ route('clientCheckOrder') }}"><u>Cek Pesanan</u></a>, harap simpan dan jangan lupakan kode ini untuk memeriksa status pesanan.</p>
       </div>
       <div class="d-flex gap-2">
-        <a href="{{ route('clientCheckOrder') }}" class="btn btn-primary">Check Order Now</a>
-        <button type="button" id="pay-button" class="btn btn-success">Confirm Payment</button>
+        <a href="{{ route('clientCheckOrder') }}" class="btn btn-primary">Cek Pesanan Sekarang</a>
+        <button type="button" id="pay-button" class="btn btn-success">Konfirmasi Pembayaran</button>
       </div>
     </div>
 @push('js')

@@ -1,12 +1,12 @@
 <table id="cart" class="table table-hover table-striped">
     <thead>
         <tr>
-            <th style="width:50%">Product</th>
-            <th style="width:10%">Price</th>
-            <th style="width:25">Quantity</th>
+            <th style="width:50%">Produk</th>
+            <th style="width:10%">Harga</th>
+            <th style="width:25%">Jumlah</th>
             <th style="width:15%">Subtotal</th>
             @if(!request()->routeIs('clientCheckout'))
-                <th style="width:5%">Action</th>
+                <th style="width:5%">Aksi</th>
             @endif
         </tr>
     </thead>

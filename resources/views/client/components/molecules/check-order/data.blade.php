@@ -97,7 +97,7 @@
                                             <h6 class="font-bold font-primary">{!! str_replace('-', ' ', ucwords($row->title)) !!}</h6>
                                         </div>
                                         <div class="col-6">
-                                            <label for="">Price</label>
+                                            <label for="">Harga</label>
                                             <p class="font-bold">${{ $row->price }}</p>
                                         </div>
                                         <div class="col-6">
@@ -105,7 +105,7 @@
                                             <p class="font-bold">${!! $row->price * $row->quantity !!}</p>
                                         </div>
                                         <div class="col-12">
-                                            <label for="">Quantity</label>
+                                            <label for="">Jumlah</label>
                                             <p class="font-bold">X {{ $row->quantity }}</p>
                                         </div>
                                     </div>

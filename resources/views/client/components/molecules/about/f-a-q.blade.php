@@ -9,36 +9,36 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button font-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Frequently asked questions 1
+                Apakah UD Kurnia melayani pembelian eceran atau hanya grosir?
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body font-secondary">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas error nisi, odit saepe sit deleniti repudiandae itaque! Veritatis ab, nihil iste impedit dolor labore tempore optio esse id libero fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate perspiciatis suscipit accusantium, voluptatem explicabo labore fuga, repellendus rem laudantium vero similique molestiae obcaecati. Accusantium, sint. Unde culpa temporibus eveniet!
+                UD Kurnia adalah toko grosir yang berfokus pada penjualan dalam jumlah besar dengan harga yang lebih hemat. Namun, untuk beberapa produk tertentu kami juga melayani pembelian eceran sesuai ketersediaan stok.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button font-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Frequently asked questions 2
+                Apakah tersedia layanan pengiriman barang?
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body font-secondary">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas error nisi, odit saepe sit deleniti repudiandae itaque! Veritatis ab, nihil iste impedit dolor labore tempore optio esse id libero fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate perspiciatis suscipit accusantium, voluptatem explicabo labore fuga, repellendus rem laudantium vero similique molestiae obcaecati. Accusantium, sint. Unde culpa temporibus eveniet!
+                Ya, kami menyediakan layanan pengiriman untuk area tertentu. Ongkos kirim akan disesuaikan dengan jarak dan jumlah pembelian. Untuk pembelian dalam jumlah besar, tersedia opsi gratis ongkir sesuai syarat & ketentuan yang berlaku.
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button font-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Frequently asked questions 3
+                Bagaimana cara melakukan pemesanan di UD Kurnia?
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body font-secondary">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas error nisi, odit saepe sit deleniti repudiandae itaque! Veritatis ab, nihil iste impedit dolor labore tempore optio esse id libero fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate perspiciatis suscipit accusantium, voluptatem explicabo labore fuga, repellendus rem laudantium vero similique molestiae obcaecati. Accusantium, sint. Unde culpa temporibus eveniet!
+                Pemesanan dapat dilakukan langsung di toko kami atau melalui kontak WhatsApp yang tersedia. Anda bisa memilih produk, konfirmasi jumlah pesanan, lalu melakukan pembayaran sesuai metode yang disepakati sebelum barang dikirim.
               </div>
             </div>
           </div>

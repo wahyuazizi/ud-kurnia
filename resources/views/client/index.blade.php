@@ -14,6 +14,6 @@
   <x-organisms.category :dataCategory="$category">
     <x-molecules.button text="Lihat Semua Kategori" arrow="true" icon="bi-arrow-right" align="center" link="{{ route('clientCategory') }}"/>
   </x-organisms.category>
-  <x-organisms.join-community />
+  <x-organisms.join-community :shop="$shop" />
   <x-organisms.footer :shop="$shop"/>
 </x-template.layout>

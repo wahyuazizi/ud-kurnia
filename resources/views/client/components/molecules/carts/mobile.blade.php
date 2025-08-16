@@ -10,7 +10,7 @@
             <h6 class="font-bold">{!! str_replace('-', ' ', ucwords($details['title'])) !!}</h6>
             <div class="row">
                 <div class="col-6">
-                    <label for="price">Price</label>
+                    <label for="price">Harga</label>
                     <p id="price" class="font-bold">Rp.{{ $details['price']}}</p>
                 </div>
                 <div class="col-6">
@@ -18,7 +18,7 @@
                     <p class="font-bold">Rp.<span class="product-subtotal">{{$details['price'] * $details['quantity']}}</span></p>
                 </div>
                 <div class="col-12">
-                    <label for="quantity">Quantity : {{request()->routeIs('clientCheckout') ? 'x'.$details['quantity'] : ''}}</label>
+                    <label for="quantity">Jumlah : {{request()->routeIs('clientCheckout') ? 'x'.$details['quantity'] : ''}}</label>
                     @if(!request()->routeIs('clientCheckout'))
                         <div id="input_div" class="mt-2">
                             <input type="button" value="-" onclick="minus($(this))" class="btn btn-outline-primary">
@@ -40,10 +40,10 @@
             <div class="d-flex justify-content-between mt-3 font-secondary">
                 <a href="{{ url('/') }}" class="btn btn-sm btn-outline-secondary">
                     <span class="d-flex align-items-center gap-1">
-                        <i class="bi bi-arrow-left"></i> Continue Shopping
+                        <i class="bi bi-arrow-left"></i> Lanjut Belanja
                     </span>
                 </a>
-                <a href="/checkout" class="btn btn-sm btn-primary">CheckOut</a>
+                <a href="/checkout" class="btn btn-sm btn-primary">Checkout</a>
             </div>
         @endif
     </div>

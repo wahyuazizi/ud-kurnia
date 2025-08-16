@@ -19,12 +19,12 @@
               @error('path')
                 <span class="text-danger">{{ $message }}</span><br>
               @enderror
-              <div id="notimage" class="hidden">Please select an image
+              <div id="notimage" class="hidden">Silakan pilih gambar
               </div>
-              <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+              <span id="file-upload-btn" class="btn btn-primary">Pilih sebuah fail</span>
               </div><br>
               @if(session('errorUpload'))
-                <span class="text-danger">You must use button</span><br>
+                <span class="text-danger">Anda harus menggunakan tombol</span><br>
               @enderror
               <div id="response" class="hidden">
               <span class="text-danger" id="max-file"></span>
@@ -40,36 +40,36 @@
           </div>
           <div class="col-md-8 col-12">
             <div class="form-group">
-              <label for="name_shop">Shop name</label>
+              <label for="name_shop">Nama Toko</label>
               <input type="text" name="name_shop" id="name_shop" class="form-control  @error('name_shop') is-invalid @enderror" placeholder="Fashionista" value="{{ $shop->name_shop }}" required autofocus>
               @error('name_shop')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
             <div class="form-group">
-              <label for="phone">Phone</label>
+              <label for="phone">Telepon</label>
               <input type="number" name="phone" id="phone" class="form-control  @error('phone') is-invalid @enderror" placeholder="0812xxx" value="{{ $shop->phone }}" required >
               @error('phone')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
             <div class="form-group">
-              <label for="address">Address</label>
+              <label for="address">Alamat</label>
               <input type="text" name="address" id="address" class="form-control  @error('address') is-invalid @enderror" placeholder="3425 Stone Street" value="{{ $shop->address }}" required >
               @error('address')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
             <div class="form-group">
-                <label for="desc">Description</label>
-                <textarea name="desc" id="desc" cols="30" class="form-control @error('desc') is-invalid @enderror" placeholder="We are selling  . . .">{{ $shop->desc }}</textarea>
+                <label for="desc">Deskripsi</label>
+                <textarea name="desc" id="desc" cols="30" class="form-control @error('desc') is-invalid @enderror" placeholder="Kami menjual  . . .">{{ $shop->desc }}</textarea>
                 @error('desc')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-primary float-end">Update</button>
+            <button type="submit" class="btn btn-primary float-end">Perbarui</button>
           </div>
         </div>
       </form>
