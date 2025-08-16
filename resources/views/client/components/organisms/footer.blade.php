@@ -9,19 +9,19 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-6 ">
-          <h6>Company</h6>
-          <a href="/about" class="text-decoration-none"><p>About Us</p></a>
-          <a href="/products" class="text-decoration-none"><p>Product</p></a>
-          <a href="/about#address" class="text-decoration-none text-dark"><p>Address</p></a>
+          <h6>Perusahaan</h6>
+          <a href="/about" class="text-decoration-none"><p>Tentang Kami</p></a>
+          <a href="/products" class="text-decoration-none"><p>Produk</p></a>
+          <a href="/about#address" class="text-decoration-none text-dark"><p>Alamat</p></a>
         </div>
         <div class="col-lg-3 col-md-3 col-6 ">
-          <h6>Support</h6>
+          <h6>Dukungan</h6>
           <a href="/about#faq" class="text-decoration-none text-dark"><p>FAQ</p></a>
-          <a href="/about#shippingandreturns" class="text-decoration-none text-dark"><p>Shipping & Returns</p></a>
-          <a href="/about#warranty" class="text-decoration-none text-dark"><p>Warranty</p></a>
+          <a href="/about#shippingandreturns" class="text-decoration-none text-dark"><p>Pengiriman & Pengembalian</p></a>
+          <a href="/about#warranty" class="text-decoration-none text-dark"><p>Garansi</p></a>
         </div>
         <div class="col-lg-2 col-md-2 col-6 d-flex flex-column">
-          <h6>Contact Us</h6>
+          <h6>Hubungi Kami</h6>
           <p class="d-flex align-items-center"><img src="{{ asset('client/img/icon-phone.png') }}" alt="" class="img-fluid me-2">{{$shop->phone}}</p>
           <p class="d-flex align-items-center"><img src="{{ asset('client/img/icon-email.png') }}" alt="" class="img-fluid me-2">hello{!! '@'.str_replace(' ', '', strtolower($shop->name_shop)) !!}.com</p>
           <div class="d-lg-block d-md-block d-none">
@@ -29,27 +29,15 @@
               <div class="col-3">
                 <img src="{{ asset('client/img/icon-instagram.png') }}" alt="" class="img-fluid">
               </div>
-              <!-- <div class="col-3">
-                <img src="{{ asset('client/img/icon-tokopedia.png') }}" alt="" class="img-fluid">
-              </div>
-              <div class="col-3">
-                <img src="{{ asset('client/img/icon-facebook.png') }}" alt="" class="img-fluid">
-              </div> -->
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-6 d-lg-none d-md-none d-block">
-          <h6>Social Media</h6>
+          <h6>Media Sosial</h6>
           <div class="row">
             <div class="col-3">
               <img src="{{ asset('client/img/icon-instagram.png') }}" alt="" class="img-fluid">
             </div>
-            <!-- <div class="col-3">
-              <img src="{{ asset('client/img/icon-tokopedia.png') }}" alt="" class="img-fluid">
-            </div>
-            <div class="col-3">
-              <img src="{{ asset('client/img/icon-facebook.png') }}" alt="" class="img-fluid">
-            </div> -->
           </div>
         </div>
       </div>
@@ -57,5 +45,5 @@
   </div>
 
   <footer class="container text-center py-3">
-    <p class="m-0 d-inline-block text-nowrap">&#169; 2025 UD Kurnia, Made with ❤️ by Ikhwan</p>
+    <p class="m-0 d-inline-block text-nowrap">&#169; 2025 UD Kurnia, Dibuat dengan ❤️ oleh Ikhwan</p>
   </footer>

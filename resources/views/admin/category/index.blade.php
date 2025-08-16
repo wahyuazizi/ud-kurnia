@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('button')
-  <a href="{{ route('categoryCreate') }}" class="btn btn-outline-primary">Create</a>
+  <a href="{{ route('categoryCreate') }}" class="btn btn-outline-primary">Buat</a>
 @endsection
 @section('content')
   <div class="card">
@@ -27,13 +27,13 @@
 <script>
 const alertconfirm = (url) => {
     Swal.fire({
-        title: 'Sure to delete this category?',
-        text: "This category will delete permanently",
+        title: 'Yakin ingin menghapus kategori ini?',
+        text: "Kategori ini akan dihapus secara permanen",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Ya, hapus!'
         }).then((result) => {
         if (result.isConfirmed) {
             window.location.replace(url);

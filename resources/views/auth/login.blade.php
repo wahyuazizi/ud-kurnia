@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
                     <div class="auth-logo d-flex justify-content-center">
                         <a href="/"><h1><u>UD KURNIA</u></h1></a>
                     </div>
-                    <h2 class="text-center">Log in.</h2>
+                    <h2 class="text-center">Masuk</h2>
                     <form method="POST" action="{{ route('login') }}">
                     @csrf
                         <div class="form-group position-relative has-icon-left mb-4">
@@ -49,9 +49,9 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-3">Log in</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-3">Masuk</button>
                     </form>
-                    
+
                 </div>
             </div>
             <div class="col-lg-7 d-none d-lg-block">

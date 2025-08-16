@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -50,14 +50,14 @@
                         <li class="sidebar-item {{ request()->routeIs('category') || request()->routeIs('categoryCreate') ? 'active' : '' }}">
                             <a href="{{route('category')}}" class='sidebar-link'>
                                 <i class="bi bi-stack"></i>
-                                <span>Category</span>
+                                <span>Kategori</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item {{ request()->routeIs('products') || request()->routeIs('productCreate') || request()->routeIs('productAddImages') || request()->routeIs('productEdit') ? 'active' : '' }}">
                             <a href="{{route('products')}}" class='sidebar-link'>
                                 <i class="bi bi-box"></i>
-                                <span>Products</span>
+                                <span>Produk</span>
                             </a>
 
                         </li>
@@ -65,21 +65,21 @@
                         <li class="sidebar-item {{ request()->routeIs('orders') || request()->routeIs('orderDetail') ? 'active' : '' }}">
                             <a href="{{route('orders')}}" class='sidebar-link'>
                                 <i class="bi bi-bag"></i>
-                                <span>Orders</span>
+                                <span>Pesanan</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item {{ request()->routeIs('shopDetail') ? 'active' : '' }}">
                             <a href="{{route('shopDetail')}}" class='sidebar-link'>
                                 <i class="bi bi-shop"></i>
-                                <span>Shop</span>
+                                <span>Toko</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item {{ request()->routeIs('discountEdit') ? 'active' : '' }}">
                             <a href="{{route('discountEdit')}}" class='sidebar-link'>
                                 <i class="bi bi-tag-fill"></i>
-                                <span>Discount</span>
+                                <span>Diskon</span>
                             </a>
                         </li>
 
@@ -90,12 +90,12 @@
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item ">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalUpdatePassword">Change password</a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalUpdatePassword">Ganti password</a>
                                 </li>
                                 <li class="submenu-item ">
                                     <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Log Out</a>
+                                                     document.getElementById('logout-form').submit();">Keluar</a>
                                 </li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
@@ -136,7 +136,7 @@
                                 <i class="bi bi-shield-lock-fill"></i>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary float-end">Save</button>
+                        <button type="submit" class="btn btn-primary float-end">Simpan</button>
                     </form>
                 </div>
             </div>

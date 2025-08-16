@@ -15,11 +15,11 @@
               <img id="file-image" src="{{ asset('shop/'.$shop->path) }}" alt="Preview">
               <div id="start">
               <i class="fa fa-download" aria-hidden="true"></i>
-              <div>Upload logo shop</div>
+              <div>Unggah logo toko</div>
               @error('path')
                 <span class="text-danger">{{ $message }}</span><br>
               @enderror
-              <div id="notimage" class="hidden">Please select an image            
+              <div id="notimage" class="hidden">Please select an image
               </div>
               <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
               </div><br>
@@ -29,7 +29,7 @@
               <div id="response" class="hidden">
               <span class="text-danger" id="max-file"></span>
               <div id="messages">
-              
+
               </div>
               <progress class="progress" id="file-progress" value="0">
                 <span>0</span>%
@@ -42,21 +42,21 @@
             <div class="form-group">
               <label for="name_shop">Shop name</label>
               <input type="text" name="name_shop" id="name_shop" class="form-control  @error('name_shop') is-invalid @enderror" placeholder="Fashionista" value="{{ $shop->name_shop }}" required autofocus>
-              @error('name_shop') 
+              @error('name_shop')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
             <div class="form-group">
               <label for="phone">Phone</label>
               <input type="number" name="phone" id="phone" class="form-control  @error('phone') is-invalid @enderror" placeholder="0812xxx" value="{{ $shop->phone }}" required >
-              @error('phone') 
+              @error('phone')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
             <div class="form-group">
               <label for="address">Address</label>
               <input type="text" name="address" id="address" class="form-control  @error('address') is-invalid @enderror" placeholder="3425 Stone Street" value="{{ $shop->address }}" required >
-              @error('address') 
+              @error('address')
                 <small class="text-danger">{{ $message }}</small>
               @enderror
             </div>
@@ -92,7 +92,7 @@
       text.on('input', function(){
           resize($(this));
       });
-      
+
       function resize ($text) {
           $text.css('height', 'auto');
           $text.css('height', $text[0].scrollHeight+'px');
